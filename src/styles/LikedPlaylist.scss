@@ -1,0 +1,97 @@
+.liked-tracks{
+    background: linear-gradient(180deg, #604EC1 5.09%, #121212 43.28%);
+    width: 100%;
+}   
+
+.liked-about{
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 0 32px;
+
+    .liked-info{
+
+        .public-playlist{
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.32px;
+        }
+
+        .liked-title{
+            text-transform: capitalize;
+            color: #FFF;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+        }
+
+        .liked-para{
+            padding-top: 20px;
+            color: #FFF;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 450;
+            line-height: normal;
+            letter-spacing: 0.18px;
+        }
+    }
+}
+
+.liked-contnet{
+    
+    .music{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .music-img{
+    
+            img{
+                width: 52px;
+                height: 52px;
+            }
+        }
+    
+        .msc-main{
+            display: flex;
+            align-items: center;
+            gap: 0 21px;
+            padding-top: 22px;
+    
+    
+            .music-info{
+    
+                .music-name{
+                    width: 200px;
+                    color: #FFF;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 450;
+                    line-height: normal;
+                    letter-spacing: 0.2px;
+                }
+        
+                .music-artist{
+                    color: #B3B3B3;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 450;
+                    line-height: normal;
+                }
+            }
+        
+            .music-number{
+                color: #B3B3B3;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 450;
+                line-height: normal;
+                letter-spacing: 0.44px;
+            }
+        }
+    }
+}

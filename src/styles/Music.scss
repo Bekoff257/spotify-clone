@@ -1,0 +1,115 @@
+.musics{
+    background: #121212;
+}
+
+.music-content{
+    padding-top: 40px;
+}
+
+.music{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .music-img{
+
+        img{
+            width: 52px;
+            height: 52px;
+        }
+    }
+
+    .msc-main{
+        display: flex;
+        align-items: center;
+        gap: 0 21px;
+        padding-top: 22px;
+
+
+        .music-info{
+
+            .music-name{
+                width: 200px;
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 450;
+                line-height: normal;
+                letter-spacing: 0.2px;
+            }
+    
+            .music-artist{
+                color: #B3B3B3;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 450;
+                line-height: normal;
+            }
+        }
+    
+        .music-number{
+            color: #B3B3B3;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 450;
+            line-height: normal;
+            letter-spacing: 0.44px;
+        }
+    }
+}
+
+.top-tags{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 15px;
+
+    span, p{
+        color: #B3B3B3;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        letter-spacing: 1.44px;
+    }
+}
+
+.music-album{
+    width: 300px;
+    text-align: left;
+
+    .music-album-name{
+        color: #B3B3B3;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+    }
+}
+
+.music-duration{
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+    text-align: right;
+
+    p{
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 450;
+        line-height: normal;
+        letter-spacing: -0.6px;
+    }
+
+    .clk-like{
+        display: flex;
+        align-items: center;
+        color: #666666;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 25px;
+    }
+}

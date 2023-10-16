@@ -1,0 +1,106 @@
+.activity{
+    background: #000;
+    width: 100%;
+    max-width: 300px;
+}
+
+.act-content{
+
+    .act-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3{
+            color: #CCC;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 0.2px;
+        }
+
+        .act-icons{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.act-icons {
+    display: flex;
+    align-items: center;
+
+    .act-close-btn{
+        
+        button{
+            cursor: pointer;
+            background: transparent;
+            outline: none;
+            border: none;
+        }
+    }
+}
+
+.act-content{
+
+    .user-active{
+
+        p{
+            color: #CCC;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 450;
+            line-height: 24px;
+        }
+
+        .users{
+
+            .user-frnd{
+                padding-top: 30px;
+                display: flex;
+                align-items: center;
+                gap: 0 15px;
+            }
+        }
+    }
+
+    .settings-section{
+        padding-top: 21px;
+
+        p{
+            color: #CCC;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 450;
+            line-height: 25px;
+        }
+
+        .settings-btn_sect{
+            display: flex;
+            align-items: center;
+            padding-top: 23px;
+            justify-content: center;
+
+            .settings-btn{
+                cursor: pointer;
+                outline: none;
+                border: none;
+                color: #171717;
+                text-align: center;
+                font-size: 18px;
+                padding: 20px 60px;
+                border-radius: 40px;
+                background: #FFF;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 2.52px;
+            }
+        }
+    }
+}
+
+.close{
+    display: none;
+}
