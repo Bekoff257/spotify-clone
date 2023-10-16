@@ -8,6 +8,7 @@ import Recent from './Recent'
 import Jump from './Jump'
 import Unique from './Unique'
 import { useLocation } from 'react-router-dom'
+import { AiOutlineLoading } from 'react-icons/ai'
 const expRoutes = ["/liked"]
 
 const Main = () => {
@@ -42,19 +43,34 @@ const Main = () => {
                 <h1>Good afternoon</h1>
                 <div className="playlists-main">
                     <div className="playlists">
-                        {mixesData.playlists?.items.map((item) => (
-                            <div className="playlist" key={item.id}>
-                                <Link to={`/playlist/${item.id}`}>
-                                    <img src={item.images[0].url} alt="" />
-                                    <h3>{item.name}</h3>
-                                </Link>
-                            </div>
-                        ))}
+                        {
+                            mixesData ? (
+                                mixesData.playlists?.items.map((item) => (
+                                    <div className="playlist" key={item.id}>
+                                        <Link to={`/playlist/${item.id}`}>
+                                            <img src={item.images[0].url} alt="" />
+                                            <h3>{item.name}</h3>
+                                        </Link>
+                                    </div>
+                                ))
+                            ) : (
+                                <div className="skeleton">
+                                    <AiOutlineLoading/>
+                                </div>
+                            )
+                        }
                     </div>
                 </div>
                 <div className="mixes-section">
-                    <h1>Your top mixes</h1>
-                    <Mixes/>
+                    {
+                        mixesData ? (
+                            <><h1>Your top mixes</h1><Mixes /></>
+                        ) : (
+                            <div className="skeleton">
+                                <AiOutlineLoading/>
+                            </div>
+                        )
+                    }
                 </div>
                 <div className="made-section">
                     <h1>Made for you</h1>
